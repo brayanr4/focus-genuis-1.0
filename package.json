@@ -1,0 +1,15 @@
+{
+  "name": "focus-genius",
+  "version": "2.0.0",
+  "private": true,
+  "description": "AI study planner with a focus timer and progress tracking.",
+  "scripts": {
+    "setup": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently -k -n api,web -c magenta,cyan \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "test": "npm --prefix backend test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
